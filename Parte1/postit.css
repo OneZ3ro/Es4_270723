@@ -17,7 +17,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 21%;
-  height: 35%;
+  height: 20%;
   background: linear-gradient(180deg, #cafccb, #7c837c);
   box-shadow: 4px 4px 10px black;
   rotate: z 365deg;
@@ -58,7 +58,7 @@ p {
 }
 
 .box:hover {
-  height: 40%;
+  height: 30%;
   width: 30%;
   rotate: z 360deg;
   box-shadow: 15px 15px 20px black;
@@ -73,6 +73,10 @@ p {
 }
 
 @media screen and (min-width: 1400px) {
+  .box {
+    height: 25%;
+  }
+
   h2 {
     font-size: 3.2em;
   }
@@ -87,6 +91,10 @@ p {
     transition: all 0.5s;
   }
 
+  .box:hover {
+    height: 35%;
+  }
+
   .box:hover h2 {
     font-size: 4em;
   }
@@ -97,6 +105,10 @@ p {
 }
 
 @media screen and (min-width: 1600px) {
+  .box {
+    height: 30%;
+  }
+
   h2 {
     font-size: 4em;
     font-weight: 800;
@@ -110,6 +122,10 @@ p {
   h2,
   p {
     transition: all 0.5s;
+  }
+
+  .box:hover {
+    height: 40%;
   }
 
   .box:hover h2 {
