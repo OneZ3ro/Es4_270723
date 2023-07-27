@@ -11,12 +11,6 @@ main {
   font-family: "Indie Flower", cursive;
 }
 
-.box,
-h2,
-p {
-  transition: all 0.5s;
-}
-
 .box {
   display: flex;
   flex-direction: column;
@@ -49,12 +43,18 @@ p {
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 800;
 }
 
 p {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+.box,
+h2,
+p {
+  transition: all 0.5s;
 }
 
 .box:hover {
@@ -65,11 +65,60 @@ p {
 }
 
 .box:hover h2 {
-  font-size: 5em;
+  font-size: 3.2em;
 }
 
 .box:hover p {
-  font-size: 3em;
+  font-size: 2.2em;
+}
+
+@media screen and (min-width: 1400px) {
+  h2 {
+    font-size: 3.2em;
+  }
+
+  p {
+    font-size: 2.2em;
+  }
+
+  .box,
+  h2,
+  p {
+    transition: all 0.5s;
+  }
+
+  .box:hover h2 {
+    font-size: 4em;
+  }
+
+  .box:hover p {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h2 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 2.5em;
+  }
+
+  .box,
+  h2,
+  p {
+    transition: all 0.5s;
+  }
+
+  .box:hover h2 {
+    font-size: 5em;
+  }
+
+  .box:hover p {
+    font-size: 3em;
+  }
 }
 
 /* ---------------------------- DONE ---------------------------- */
