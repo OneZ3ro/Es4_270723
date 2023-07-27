@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /*
 1 creazione del testo e formattazione di 1 parola da far ruotare
 2 inserimento delle altre 2 parole
@@ -8,3 +10,55 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#testoAlternato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  border: 2px solid #666666;
+  width: 70%;
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+@keyframes showI {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    color: #6a889c;
+  }
+}
+
+@keyframes hideI {
+  0% {
+    opacity: 1;
+    color: #6a889c;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.display-showI {
+  animation: showI 2s 1.5s both;
+}
